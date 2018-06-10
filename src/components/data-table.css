@@ -1,0 +1,86 @@
+.data-table {
+  background: #143D6E;
+  border: 2px #2460A6 solid;
+  border-radius: 5px;
+  box-shadow: #2460A6 0 0 3px;
+  color: #67BFE0;
+  padding: 5px;
+}
+
+.data-table-content {
+  width: 100%;
+  height: calc( 100% - 30px );
+  overflow-y: hidden;
+  font-size: 14px;
+}
+
+.data-table-content div {
+  margin-bottom: 3px;
+  padding-top: 3px;
+}
+
+.data-table-content .title {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.data-table-content .entry {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #ffffff80;
+}
+
+.data-table .more {
+  height: 16px;
+  text-align: center;
+  margin-top: 8px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  vertical-align: middle;
+}
+
+.data-table .more:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+.data-table .modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  transition: .25s ease-in-out;
+  background: #000000e0;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  
+}
+
+.data-table .modal .container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 24px;
+  padding: 64px;
+}
+
+.data-table .modal .container .title {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 32px;
+  margin: 10px;
+}
+
+.data-table .modal .container .entry {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #ffffff80;
+  padding: 3px;
+}
+
+.data-table .entry:hover {
+  background: #ffffff30;
+  cursor: pointer;
+}
