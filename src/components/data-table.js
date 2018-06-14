@@ -46,7 +46,7 @@ export default class DataTable extends Component {
     if (this.state.loading) return
     this.setState({ loading: true })
     let skip = this.state.data.length
-    axios.get(this.props.url + `/${skip}/${this.LOAD_LIMIT}/${this.props.subParam || ''}`).then((resp) => {
+    axios.get(this.props.url + `/${skip}/${this.LOAD_LIMIT}/${this.props.subParam || '0'}`).then((resp) => {
       this.setState({ data: [...this.state.data, ...resp.data], loading: false })
     }).catch((err) => {
       console.error(err)
