@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^1.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
@@ -13,11 +14,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@antv/data-set": "^0.8.9",
     "@antv/g2": "^3.1.2",
     "chart.js": "^2.7.2"
-  }
+  },
+  "homepage": "https://somefive.github.io/interdisciplinary-viewer-frontend"
 }
