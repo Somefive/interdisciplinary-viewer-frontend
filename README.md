@@ -1,3 +1,5 @@
+This project is an viewer for my undergraduate degree project. Please visit [interdiscipilinary](http://interdisciplinary.somefive.com).
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
