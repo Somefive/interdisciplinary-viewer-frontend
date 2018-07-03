@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Chart, Global } from '@antv/g2'
-import DataSet from '@antv/data-set'
 
 Global.setTheme('dark')
 

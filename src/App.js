@@ -101,7 +101,7 @@ class App extends Component {
             <div className="search-title">What do you want to know?</div>
             <input className="search-input" value={this.state.searchText}
                    onChange={(e) => this.setState({searchText: e.target.value.toLowerCase()})}
-                   onKeyPress={(e) => { if (e.key == 'Enter') this.search() }}/>
+                   onKeyPress={(e) => { if (e.key === 'Enter') this.search() }}/>
             <div className="search-recent">{ this.state.recentTexts.map((v, i) => {
               return <span key={i} onClick={() => { this.addRecentText(v); this.search(); }}>{v}</span>
             })}</div>
@@ -129,6 +129,7 @@ class App extends Component {
               Alias: { this.state.entities.map((entity, index) => {
                 if (entity !== this.state.token)
                   return <span className="entity" key={index}>{entity}</span>
+                return undefined
               })}
             </div>
           </div>
@@ -205,7 +206,7 @@ class App extends Component {
   addRecentText = (text) => {
     let texts = [text]
     for (let t of this.state.recentTexts) {
-      if (t == text) continue
+      if (t === text) continue
       texts.push(t)
       if (texts.length > 3) break
     }
